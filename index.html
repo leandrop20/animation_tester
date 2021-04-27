@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<title>Animation Tester</title>
+	<style>
+		body {
+			background-color: #ecf0f1;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			height: 100vh;
+		}
+		#stage {
+			width: 768px; height: 450px;
+			align-self: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="stage"></div>
+	<script src="game.js"></script>
+	<script>
+		function loadScreenFinal(data) {
+			console.log(data);
+			// setTimeout(restartGame, 2000);
+		}
+
+		// function restartGame() {
+		// 	console.clear();
+		// 	console.log("RESTART GAME!");
+		// 	Phaser.GAMES[0].rootClass.this.loadMenu();
+		// }
+
+		window.onload = () => {
+			new GamePlayer.Main({});
+		}
+	</script>
+</body>
+</html>
