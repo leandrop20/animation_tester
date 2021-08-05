@@ -181,7 +181,7 @@ export class Root extends Sprite {
 		if (this.currentId > this.animations.length - 1) { this.currentId = 0; }
 		if (this.currentId < 0) { this.currentId = this.animations.length - 1; }
 
-		this.animation.play(this.animations[this.currentId], true);
+		this.animation.play(this.animations[this.currentId], false);
 		this.tf.text = this.animations[this.currentId];
 	}
 	
